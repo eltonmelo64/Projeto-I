@@ -1,0 +1,96 @@
+/* Reseta margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fd0f; /* Cor de fundo */
+    color: #023047; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto no centro */
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 10px; /* Espaçamento em volta do cabeçalho */
+}
+
+.header-image {
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Faz a imagem ser um bloco */
+    margin: 0; /* Remove margens */
+    float: center; /* Faz a imagem flutuar à esquerda */
+    padding-right: 10px; /* Espaço entre a imagem e o texto, se necessário */
+}
+
+.page {
+    text-align: center; /* Centraliza o texto da página */
+    padding: 20px; /* Espaçamento em volta do conteúdo da página */
+    overflow: auto; /* Garante que o contêiner da página se ajuste à imagem flutuante */
+}
+
+
+/* Estilos do contêiner da página inicial */
+.container {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Parágrafo */
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 5px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #25b8f7; /* Cor de fundo do botão */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.button:hover {
+    background-color: #ffa406; /* Cor de fundo ao passar o mouse */
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em; /* Reduz o tamanho do título */
+    }
+
+    .button {
+        width: 100%; /* Botões ocupam toda a largura em telas pequenas */
+    }
+}

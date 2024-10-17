@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove paddings padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e paddings no cálculo da largura e altura do elemento */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte principal da página */
+    background: linear-gradient(135deg, #f4f4f4 50%, #eaeaea 50%); /* Define um fundo gradiente diagonal */
+    color: #333; /* Define a cor do texto */
+    line-height: 1.6; /* Define a altura da linha para melhorar a legibilidade */
+}
+
+.header {
+    display: flex; /* Utiliza flexbox para o layout do cabeçalho */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    background-color: #3498db; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidade */
+}
+
+.header-content {
+    display: flex; /* Flexbox para organizar conteúdo dentro do cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens no cabeçalho */
+}
+
+.header {
+    /* A seção abaixo parece repetida e pode ser removida */
+    display: flex; /* Flexbox novamente, desnecessário por já ter sido declarado */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 50%; /* Limita a largura do cabeçalho */
+}
+
+.header-image {
+    width: 100px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    /*border: 3px solid #fff; /* Comentado: borda branca em torno da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombreamento da imagem para profundidade */
+}
+
+h1 {
+    color: #fff; /* Cor do texto do título */
+    font-size: 2rem; /* Tamanho da fonte do título */
+    /*border: 2px solid #fff; /* Comentado: borda branca opcional */
+    padding: 10px; /* Espaçamento interno do título */
+    border-radius: 10px; /* Cantos arredondados no título */
+    /*display: inline-block; /* Faz a borda se ajustar ao tamanho do texto */
+    margin: 20px auto; /* Margens automáticas para centralizar */
+    text-align: center; /* Centraliza o texto dentro do h1 */
+    /*margin: 0; /* Comentado: remove a margem padrão */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreamento do texto para destaque */
+}
+
+a {
+    display: inline-block; /* Exibe links como blocos inline */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    margin: 10px; /* Margens externas dos links */
+    border-radius: 25px; /* Bordas arredondadas para botões */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: white; /* Cor do texto dos links */
+    background-color: #25b8f7; /* Cor de fundo do botão */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+a:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
+    background-color: #ffa406; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.page {
+    text-align: center; /* Centraliza o texto dentro da página */
+    padding: 40px 20px; /* Espaçamento interno da página */
+    max-width: 600px; /* Limita a largura da página */
+    margin: 40px auto; /* Espaçamento acima e abaixo, centraliza horizontalmente */
+    background: #f9fd0f; /* Cor de fundo da página */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor da página */
+}
+
+.home-link {
+    display: inline-block; /* Exibe o link como um bloco inline */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 10px 0; /* Margens verticais */
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+    background-color: #007BFF; /* Cor de fundo do link */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.home-link:hover {
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.button {
+    display: inline-block; /* Exibe o botão como um bloco inline */
+    margin: 10px 0; /* Margens verticais */
+    padding: 12px 24px; /* Espaçamento interno do botão */
+    background: linear-gradient(135deg, #e74c3c, #c0392b); /* Gradiente de fundo no botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor do botão */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, letter-spacing 0.2s ease; /* Transições suaves para várias propriedades */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c); /* Inverte o gradiente ao passar o mouse */
+    transform: translateY(-3px); /* Move o botão para cima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+    letter-spacing: 1px; /* Aumenta o espaço entre letras ao passar o mouse */
+}
+
+.button:active {
+    transform: translateY(1px); /* Move o botão para baixo ao clicar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Retorna à sombra original */
+}
+
+/* Efeito de pulsar para dar vida ao texto */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Tamanho original */
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta o tamanho ao meio da animação */
+    }
+}
+
+.button {
+    animation: pulse 1.5s infinite; /* Aplica a animação de pulsar ao botão */
+}
+
+.footer {
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    background-color: #3498db; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    position: relative; /* Para posicionamento em relação ao fluxo do documento */
+    width: 100%; /* Largura total do rodapé */
+}
+
+.footer p {
+    margin: 0; /* Remove margens do parágrafo no rodapé */
+}

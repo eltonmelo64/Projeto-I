@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+    background: linear-gradient(135deg, #f4f4f4 50%, #eaeaea 50%); /* Fundo gradiente */
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    flex-direction: column; /* Muda a direção do flex para coluna */
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 50%; /* Limita a largura do cabeçalho */
+    margin: 0 auto; /* Centraliza o cabeçalho na página */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/*.header {
+    /*display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    /*justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    /*padding: 20px; /* Espaçamento interno */
+    /*max-width: 50%; /* Limita a largura do cabeçalho */
+
+
+.header-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    /*border: 3px solid #fff; /* Borda branca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombreamento da imagem */
+}
+
+h1 {
+    color: #fff;
+    /*Display: flex;
+    Flex-direction: column;*/
+    font-size: 2rem; /* Tamanho da fonte do título */
+    /*border: 2px solid #fff; /* Borda branca */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados (opcional) */
+    /*display: inline-block; /* Faz a borda se ajustar ao tamanho do texto */
+    /*margin: 20px auto; /* Centraliza o h1 com margens automáticas */
+    text-align: center; /* Centraliza o texto dentro do h1 */
+    /*margin: 0; /* Remove a margem padrão */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreamento do texto */
+}
+
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 25px; /* Botões redondos */
+    text-decoration: none;
+    color: white; /* Cor do texto */
+    background-color: #25b8f7; /* Cor do fundo */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+a:hover {
+    transform: scale(1.05);
+    background-color: #ffa406; /* Cor ao passar o mouse */
+}
+
+.page {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 40px auto; /* Espaçamento acima e abaixo do conteúdo */
+    background: #f9fd0f; /* Fundo branco */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.home-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #0056b3;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b); /* Gradiente no fundo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, letter-spacing 0.2s ease; /* Transições suaves */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c); /* Inverte o gradiente ao passar o mouse */
+    transform: translateY(-3px); /* Move o botão para cima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+    letter-spacing: 1px; /* Aumenta o espaço entre letras */
+}
+
+.button:active {
+    transform: translateY(1px); /* Leve movimento para baixo ao clicar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Retorna à sombra original */
+}
+
+/* Efeito de pulsar para dar vida ao texto */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta o tamanho */
+    }
+}
+
+.button {
+    animation: pulse 1.5s infinite; /* Adiciona a animação de pulsar */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    /*background-color: #3498db;*/
+    color: white;
+    position: relative; /* Alterado para um rodapé fixo */
+    width: 100%;
+    font-weight: bold; /* Texto em negrito */
+}
+
+.footer p {
+    margin: 0; /* Remove margens */
+}

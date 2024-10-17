@@ -1,0 +1,144 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #023047;
+    background-color: #f9fd0f; /* Cor de fundo */
+}
+
+/* Estilo para a estrutura da página */
+.page {
+    margin: 40px auto; /* Espaçamento acima e abaixo, centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; /* Preenche toda a altura da tela */
+}
+
+/* Estilo para a imagem do cabeçalho */
+.header-image {
+    width: 100px;
+    height: auto;
+    border-radius: 50%; /* Torna a imagem circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombreamento da imagem */
+}
+
+/* Estilo para o título */
+h1 {
+    color: #fff; /* Cor do texto do título */
+    font-size: 2rem; /* Tamanho da fonte do título */
+    /*border: 2px solid #fff; /* Comentado: borda branca opcional */
+    padding: 10px; /* Espaçamento interno do título */
+    border-radius: 10px; /* Cantos arredondados no título */
+    /*display: inline-block; /* Faz a borda se ajustar ao tamanho do texto */
+    margin: 10px auto; /* Margens automáticas para centralizar */
+    text-align: center; /* Centraliza o texto dentro do h1 */
+    /*margin: 0; /* Comentado: remove a margem padrão */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreamento do texto para destaque */
+}
+
+/* Estilo para a lista de usuários */
+.lista-usuarios {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*margin-top: 20px; /* Espaçamento acima da lista */
+    /*margin-bottom: 20px; /* Espaçamento abaixo da lista */
+    /*border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px; /* Limita a largura da lista */
+}
+
+/* Estilo para cada usuário na lista */
+.usuario {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.usuario:last-child {
+    border-bottom: none; /* Remove a borda do último item */
+    margin-bottom: 1px; /* Adiciona um espaço abaixo do último item */
+}
+
+/* Estilo para os links */
+a {
+    /*color: #25b8f7; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Transição para a mudança de cor */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #25b8f7;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    /*transition: background-color 0.3s, transform 0.3s;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    
+}
+
+a:hover {
+    color: #ffa406; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilo para o botão de registro 
+.btn {/*
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #25b8f7;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, letter-spacing 0.2s ease; /* Transições suaves para várias propriedades */
+/*    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+/*}
+
+.btn:hover {
+    background-color: #ffa406;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+/*}*/
+
+
+.button {
+    display: inline-block; /* Exibe o botão como um bloco inline */
+    margin: 10px 0; /* Margens verticais */
+    padding: 12px 24px; /* Espaçamento interno do botão */
+    background: linear-gradient(135deg, #e74c3c, #c0392b); /* Gradiente de fundo no botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor do botão */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, letter-spacing 0.2s ease; /* Transições suaves para várias propriedades */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #c0392b, #e74c3c); /* Inverte o gradiente ao passar o mouse */
+    transform: translateY(-3px); /* Move o botão para cima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+    letter-spacing: 1px; /* Aumenta o espaço entre letras ao passar o mouse */
+}
+
+.button:active {
+    transform: translateY(1px); /* Move o botão para baixo ao clicar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Retorna à sombra original */
+}

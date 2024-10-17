@@ -1,0 +1,129 @@
+/* src/public/loginE.css */
+body {
+    font-family: 'Inter', sans-serif; /* Define a fonte padrão da página */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove paddings padrão do corpo */
+    color: #023047; /* Define a cor do texto padrão */
+}
+
+p#QAccount {
+    margin: 0; /* Remove margens do parágrafo com id 'QAccount' */
+}
+
+.header {
+    display: flex; /* Utiliza flexbox para layout do cabeçalho */
+    align-items: center; /* Alinha itens verticalmente no centro */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    max-width: 50%; /* Limita a largura do cabeçalho a 50% da tela */
+}
+
+.header-image {
+    width: 100px; /* Define a largura da imagem do cabeçalho */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    /*border: 3px solid #fff; /* Comentado: borda branca em torno da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombreamento da imagem para profundidade */
+}
+
+.home-link {
+    display: inline-block; /* Exibe o link como um bloco inline */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    margin: 10px 0; /* Margens verticais do link */
+    border-radius: 25px; /* Bordas arredondadas para o link */
+    text-decoration: none; /* Remove sublinhado do link */
+    color: white; /* Cor do texto do link */
+    background-color: #25b8f7; /* Cor de fundo do link */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.home-link:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o link ao passar o mouse */
+    background-color: #ffa406; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.page {
+    display: flex; /* Utiliza flexbox para layout da página */
+    flex-direction: column; /* Organiza itens em coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+    align-content: center; /* Centraliza conteúdo em múltiplas linhas */
+    justify-content: center; /* Centraliza itens verticalmente */
+    width: 100%; /* Largura total da página */
+    height: 100%; /* Altura total da página */
+    background-color: #f9fd0f; /* Cor de fundo da página */
+}
+
+.formLogin {
+    display: flex; /* Utiliza flexbox para layout do formulário */
+    flex-direction: column; /* Organiza itens em coluna */
+    background-color: #fff; /* Cor de fundo do formulário */
+    border-radius: 7px; /* Cantos arredondados do formulário */
+    padding: 40px; /* Espaçamento interno do formulário */
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4); /* Sombra ao redor do formulário */
+    gap: 5px; /* Espaçamento entre itens do formulário */
+    margin-top: 20px; /* Espaço acima do formulário */
+    margin-bottom: 20px; /* Espaço abaixo do formulário */
+}
+
+.formLogin h1 {
+    padding: 0; /* Remove espaçamento interno do título */
+    margin: 0; /* Remove margens do título */
+    font-weight: 500; /* Define peso da fonte do título */
+    font-size: 2.3em; /* Define tamanho da fonte do título */
+}
+
+.formLogin p {
+    display: inline-block; /* Exibe o parágrafo como bloco inline */
+    font-size: 14px; /* Tamanho da fonte do parágrafo */
+    color: #666; /* Cor do texto do parágrafo */
+    margin-bottom: 25px; /* Margem abaixo do parágrafo */
+}
+
+.formLogin input {
+    padding: 15px; /* Espaçamento interno dos campos de entrada */
+    font-size: 14px; /* Tamanho da fonte dos campos de entrada */
+    border: 1px solid #ccc; /* Borda padrão dos campos de entrada */
+    margin-bottom: 20px; /* Margem abaixo do campo de entrada */
+    margin-top: 5px; /* Margem acima do campo de entrada */
+    border-radius: 4px; /* Cantos arredondados dos campos de entrada */
+    transition: all linear 160ms; /* Transição suave para todas as propriedades */
+    outline: none; /* Remove contorno padrão ao focar */
+}
+
+.formLogin input:focus {
+    border: 1px solid #25a7f7; /* Altera a cor da borda ao focar no campo de entrada */
+}
+
+.formLogin label {
+    font-size: 14px; /* Tamanho da fonte dos rótulos */
+    font-weight: 600; /* Define peso da fonte dos rótulos */
+}
+
+.formLogin a {
+    display: inline-block; /* Exibe o link como bloco inline */
+    margin-bottom: 20px; /* Margem abaixo do link */
+    font-size: 13px; /* Tamanho da fonte do link */
+    color: #555; /* Cor do texto do link */
+    transition: all linear 160ms; /* Transição suave para todas as propriedades do link */
+}
+
+.formLogin a:hover {
+    color: #2568f7; /* Altera a cor do link ao passar o mouse */
+}
+
+.btn {
+    background-color: #25b8f7; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 14px; /* Tamanho da fonte do botão */
+    font-weight: 600; /* Peso da fonte do botão */
+    border: none !important; /* Remove bordas do botão */
+    border-radius: 25px; /* Bordas arredondadas do botão */
+    transition: all linear 160ms; /* Transição suave para todas as propriedades do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin: 0 !important; /* Remove margens do botão */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o botão ao passar o mouse */
+    background-color: #ffa406; /* Altera a cor de fundo ao passar o mouse */
+}
